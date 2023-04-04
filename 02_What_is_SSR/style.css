@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .styleHeading{
+        @apply  text-center capitalize text-4xl text-lime-400 bg-[#333] p-5 rounded-lg shadow-md shadow-black;
+    }
+
+    .highLight{
+        @apply capitalize font-thin text-2xl text-lime-300;
+    }
+
+    .styleDivBox{
+        @apply text-white text-xl my-5 grid grid-cols-12 font-thin;
+    }
+
+    .styleSpanBox{
+        @apply border-4 border-x-lime-400 border-y-[#222] w-[20px] h-[20px] animate-spin inline-block rounded-full;
+    }
+
+    .stylePBox{
+        @apply col-span-11;
+    }
+
+    .styleDivSpanBox{
+        @apply w-full pt-[5px] flex justify-center;
+    }
+
+    .styleLi{
+        @apply list-disc ml-10 capitalize font-thin text-2xl text-lime-300;
+    }
+}
